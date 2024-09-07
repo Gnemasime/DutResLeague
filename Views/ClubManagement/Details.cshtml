@@ -1,0 +1,35 @@
+﻿@model  DutResLeague.Models
+
+@{
+    ViewBag.Title = "Club Details - DUT RES LEAGUE";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/css/main.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Club Details</h1>
+            <a href="@Url.Action("Index", "ClubManagement")" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back to Clubs</a>
+        </header>
+
+        <main>
+            <h2>@Model.ClubName</h2>
+            <h3>Players:</h3>
+            <ul>
+                @foreach (var player in ViewBag.Players as IEnumerable<DutResLeague.Models.Player>)
+                {
+                    <li>@player.PlayerName</li>
+                }
+            </ul>
+        </main>
+    </div>
+</body>
+</html>

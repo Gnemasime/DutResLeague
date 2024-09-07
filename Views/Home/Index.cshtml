@@ -1,0 +1,108 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/site.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    /* site.css */
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .site-header {
+        margin-bottom: 30px;
+    }
+
+    .jumbotron {
+        background: #f8f9fa;
+        padding: 40px;
+        border-radius: 5px;
+    }
+
+        .jumbotron h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .jumbotron p.lead {
+            font-size: 1.25rem;
+        }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        border-color: #6c757d;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #004085;
+    }
+
+    .btn-secondary:hover {
+        background-color: #5a6268;
+        border-color: #545b62;
+    }
+
+    .site-footer {
+        background-color: #007bff;
+        color: white;
+        padding: 20px 0;
+        margin-top: 30px;
+    }
+
+</style>
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">DUT RES LEAGUE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-5">
+        <div class="jumbotron bg-light text-center">
+            <h1 class="display-4">Welcome to DUT RES LEAGUE</h1>
+            <p class="lead">Join the league, support your team, and keep up with the latest updates.</p>
+            <p><a class="btn btn-primary btn-lg" href="#">Learn more &raquo;</a></p>
+        </div>
+
+        
+    </main>
+
+    <footer class="site-footer bg-primary text-white text-center py-3">
+        <p>&copy; 2024 DUT RES LEAGUE. All rights reserved.</p>
+    </footer>
+
+    <script src="~/Scripts/jquery-3.5.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+</body>
+</html>
